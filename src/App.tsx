@@ -32,7 +32,8 @@ function App() {
   const [bounds, setBounds] = useState<LngLatBounds | undefined>();
   const [markers, setMarkers] = useState<any>();
   const [zoom, setZoom] = useState<number>(2);
-  const [selectedPoint, setSelectedPoint] = useState<null | PointFeature<IStarbucks>>(null);
+  const [selectedPoint, setSelectedPoint] =
+    useState<null | PointFeature<IStarbucks>>(null);
 
   useEffect(() => {
     if (!bounds) return;
